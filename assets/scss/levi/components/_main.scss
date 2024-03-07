@@ -1,0 +1,26 @@
+.main-content {
+    padding: 25px;
+    border-radius: 16px;
+    border: 2px solid #f4f4f4;
+    .input-component {
+        margin: auto 0 25px 0;
+        text-align: center;
+        label {
+            padding: 10px;
+        }
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    p {
+        font-size: 13px;
+    }
+    img {
+        width: 200px;
+        margin: auto;
+    }
+    .pokemon-img { 
+        text-align: center;
+    }
+}

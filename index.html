@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>N. Arifin - Pokémon Search App</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta property="og:title" content="Pokémon Search App">
+        <meta property="og:url" content="">
+        <meta property="og:site_name" content="">
+        <link rel="icon shortcut" href="">
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
+    <body>
+
+        <main>
+            <div class="container">
+                <header>
+                    <img src="assets/images/International_Pokémon_logo.svg.webp" alt="logo">
+                    <h1>Pokémon Search App</h1>
+                </header>
+                <div class="row main-content">
+                    <div class="row input-component">
+                        <label for="search-input">Search for Pokémon Name or ID:</label>
+                        <div class="input-detail">
+                            <input type="text" id="search-input" required>
+                            <button type="button" id="search-button" class="search-button">Search</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2><span id="pokemon-name"></span> <span id="pokemon-id"></span></h2>
+                        <p><span id="weight"></span> <span id="height"></span></p>
+                        <div id="pokemon-img" class="pokemon-img"></div>
+                    </div>
+                    <div class="row">
+                        <div id="types"></div>
+                    </div>
+                    <div class="row stats-table">
+                        <table>
+                            <tr>
+                                <th>Base</th>
+                                <th>Stats</th>
+                            </tr>
+                            <tr>
+                                <td>HP:</td>
+                                <td><span id="hp"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Attack:</td>
+                                <td><span id="attack"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Defense:</td>
+                                <td><span id="defense"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Sp. Attack:</td>
+                                <td><span id="special-attack"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Sp. Defense:</td>
+                                <td><span id="special-defense"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Speed:</td>
+                                <td><span id="speed"></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <footer class="footer">
+                    Made With <span>&hearts;</span>. Coded by <a href="https://github.com/nurularifin83" target="_blank">N. Arifin</a>
+                </footer>
+            </div>
+        </main>
+
+        <script type="text/javascript" src="assets/js/script.js"></script>
+    </body>
+</html>

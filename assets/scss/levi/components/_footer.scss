@@ -1,0 +1,15 @@
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    span {
+        color: $red;
+        font-size: 1.533rem;
+    }
+    a {
+        color: inherit;
+        &:hover {
+            color: $blue;
+        }
+    }
+}

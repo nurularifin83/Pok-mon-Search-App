@@ -1,0 +1,20 @@
+/*Variables and Functions*/
+@import 'variables';
+@import 'functions';
+
+/*base and layout*/
+@import 'base';
+@import 'breakpoints';
+@import 'grid';
+
+/*Components (header, footer, card, ...)*/
+@import 'components/badge';
+@import 'components/header';
+@import 'components/main';
+@import 'components/button';
+@import 'components/text';
+@import 'components/footer';
+@import 'components/table';
+
+/*Utilities (margin, padding, opacity, ...)*/
+@import 'utilities';

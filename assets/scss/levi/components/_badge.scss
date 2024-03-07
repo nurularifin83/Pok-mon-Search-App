@@ -1,0 +1,153 @@
+$bs-badge-padding-x: 0.65em;
+$bs-badge-padding-y: 0.35em;
+$bs-badge-font-size: 0.75em;
+$bs-badge-font-weight: 700;
+$bs-badge-color: #fff;
+$bs-badge-border-radius: $bs-border-radius;
+
+.badge {
+    display: inline-block;
+    padding: $bs-badge-padding-y $bs-badge-padding-x;
+    font-size: $bs-badge-font-size;
+    font-weight: $bs-badge-font-weight;
+    line-height: 1;
+    color: $bs-badge-color;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: $bs-badge-border-radius;
+    margin: 3px;
+}
+
+
+$white: #fff;
+@mixin white {
+    color: $white;
+}
+
+/*Badge color*/
+.badge-primary {
+    @include white();
+    background-color: #007bff;
+}
+.badge-secondary {
+    @include white();
+    background-color: #6c757d;
+}
+.badge-success {
+    @include white();
+    background-color: #28a745;
+}
+.badge-danger {
+    @include white();
+    background-color: #dc3545;
+}
+.badge-warning {
+    color: #212529;
+    background-color: #ffc107;
+}
+.badge-info {
+    @include white();
+    background-color: #17a2b8;
+}
+.badge-light {
+    color: #212529;
+    background-color: #f8f9fa;
+}
+.badge-dark {
+    @include white();
+    background-color: #343a40;
+}
+
+//All Pokémon types
+$normal: #A8A77A;
+$fire: #EE8130;
+$water: #6390F0;
+$electric: #F7D02C;
+$grass: #7AC74C;
+$ice: #96D9D6;
+$fighting: #C22E28;
+$poison: #A33EA1;
+$ground: #E2BF65;
+$flying: #A98FF3;
+$psychic: #F95587;
+$bug: #A6B91A;
+$rock: #B6A136;
+$ghost: #735797;
+$dragon: #6F35FC;
+$dark: #705746;
+$steel: #B7B7CE;
+$fairy: #D685AD;
+
+.bug {
+    background-color: $bug;
+    @include white();
+}
+.electric {
+    background-color: $electric;
+    color: $bs-body-color;
+}
+.flying {
+    background-color: $flying;
+    @include white();
+}
+.psychic {
+    background-color: $psychic;
+    @include white();
+}
+.ghost {
+    background-color: $ghost;
+    @include white();
+}
+.ice {
+    background-color: $ice;
+    @include white();
+}
+.dark {
+    background-color: $dark;
+    @include white();
+}
+.fighting {
+    background-color: $fighting;
+    @include white();
+}
+.grass {
+    @include white();
+    background-color: $grass;
+}
+.steel {
+    background-color: $steel;
+    @include white();
+}
+.fairy {
+    background-color: $fairy;
+    @include white();
+}
+.normal {
+    background-color: $normal;
+    @include white();
+}
+.dragon {
+    background-color: $dragon;
+    @include white();
+}
+.fire {
+    background-color: $fire;
+    @include white();
+}
+.poison {
+    background-color: $poison;
+    @include white();
+}
+.water {
+    background-color: $water;
+    @include white();
+}
+.rock {
+    background-color: $rock;
+    @include white();
+}
+.ground {
+    background-color: $ground;
+    color: $bs-body-color;
+}

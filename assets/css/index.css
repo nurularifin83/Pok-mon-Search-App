@@ -1,0 +1,421 @@
+/*Variables and Functions*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*base and layout*/
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  --bs-border-width: 1px;
+}
+
+.h1,
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+.h2,
+h2 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+.h3,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+.h4,
+h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+.h5,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+.h6,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+.h1,
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+.h2,
+h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+
+.h3,
+h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+
+.h4,
+h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+
+.h5,
+h5 {
+  font-size: 1.25rem;
+}
+
+.h6,
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-right: -0.75rem;
+  margin-left: -0.75rem;
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-top: 0;
+}
+
+.container {
+  max-width: 450px;
+}
+
+/*Components (header, footer, card, ...)*/
+.badge {
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-size: 0.75em;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem;
+  margin: 3px;
+}
+
+/*Badge color*/
+.badge-primary {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.badge-secondary {
+  color: #fff;
+  background-color: #6c757d;
+}
+
+.badge-success {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.badge-danger {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.badge-warning {
+  color: #212529;
+  background-color: #ffc107;
+}
+
+.badge-info {
+  color: #fff;
+  background-color: #17a2b8;
+}
+
+.badge-light {
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+.badge-dark {
+  color: #fff;
+  background-color: #343a40;
+}
+
+.bug {
+  background-color: #A6B91A;
+  color: #fff;
+}
+
+.electric {
+  background-color: #F7D02C;
+  color: #212529;
+}
+
+.flying {
+  background-color: #A98FF3;
+  color: #fff;
+}
+
+.psychic {
+  background-color: #F95587;
+  color: #fff;
+}
+
+.ghost {
+  background-color: #735797;
+  color: #fff;
+}
+
+.ice {
+  background-color: #96D9D6;
+  color: #fff;
+}
+
+.dark {
+  background-color: #705746;
+  color: #fff;
+}
+
+.fighting {
+  background-color: #C22E28;
+  color: #fff;
+}
+
+.grass {
+  color: #fff;
+  background-color: #7AC74C;
+}
+
+.steel {
+  background-color: #B7B7CE;
+  color: #fff;
+}
+
+.fairy {
+  background-color: #D685AD;
+  color: #fff;
+}
+
+.normal {
+  background-color: #A8A77A;
+  color: #fff;
+}
+
+.dragon {
+  background-color: #6F35FC;
+  color: #fff;
+}
+
+.fire {
+  background-color: #EE8130;
+  color: #fff;
+}
+
+.poison {
+  background-color: #A33EA1;
+  color: #fff;
+}
+
+.water {
+  background-color: #6390F0;
+  color: #fff;
+}
+
+.rock {
+  background-color: #B6A136;
+  color: #fff;
+}
+
+.ground {
+  background-color: #E2BF65;
+  color: #212529;
+}
+
+header {
+  margin-top: 30px;
+  text-align: center !important;
+}
+header img {
+  max-width: 300px;
+}
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 25px 0;
+}
+
+.main-content {
+  padding: 25px;
+  border-radius: 16px;
+  border: 2px solid #f4f4f4;
+}
+.main-content .input-component {
+  margin: auto 0 25px 0;
+  text-align: center;
+}
+.main-content .input-component label {
+  padding: 10px;
+}
+.main-content h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+.main-content p {
+  font-size: 13px;
+}
+.main-content img {
+  width: 200px;
+  margin: auto;
+}
+.main-content .pokemon-img {
+  text-align: center;
+}
+
+.search-button {
+  width: 100%;
+  background-color: hsl(34, 97%, 64%);
+  color: #212529;
+  padding: 14px 0px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 12px;
+}
+.footer span {
+  color: hsl(0, 78%, 62%);
+  font-size: 1.533rem;
+}
+.footer a {
+  color: inherit;
+}
+.footer a:hover {
+  color: hsl(212, 86%, 64%);
+}
+
+.stats-table {
+  margin: 20px auto 0 auto;
+  padding: 0;
+}
+.stats-table table {
+  padding: 0;
+}
+.stats-table table tr {
+  width: 100%;
+  background-color: hsl(34, 97%, 64%);
+  text-align: center;
+}
+.stats-table table tr th, .stats-table table tr td {
+  padding: 10px;
+  border: 2px solid #ffffff;
+}
+
+/*Utilities (margin, padding, opacity, ...)*/

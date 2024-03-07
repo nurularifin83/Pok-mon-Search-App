@@ -1,0 +1,24 @@
+{
+  "name": "pokemon-search-app",
+  "version": "1.0.0",
+  "description": "Pokemon search app built with Javascript and API",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SASS",
+    "Responsive",
+    "Javascript",
+    "API"
+  ],
+  "author": "Nurul Arifin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.71.1"
+  }
+}
